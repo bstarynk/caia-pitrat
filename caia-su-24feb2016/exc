@@ -1,0 +1,9 @@
+#
+limit stacksize 2048k
+rm hg
+rm b.out
+rm sor
+cc *.c  -pg -o gmon.out
+gmon.out <pau >hg
+gprof gmon.out >sor
+unlimit stacksize

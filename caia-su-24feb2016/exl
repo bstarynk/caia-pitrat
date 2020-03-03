@@ -1,0 +1,7 @@
+rm pb
+date >pb
+a.out <pal >>&pb
+date >>pb
+rm lin
+lint -hx *.c >&lin
+date >>pb

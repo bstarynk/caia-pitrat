@@ -1,0 +1,7 @@
+#
+limit stacksize 2048k
+a.out <pau >&pb
+unlimit stacksize
+\rm lin
+lint -hx *.c >&lin
+cp a.out cout

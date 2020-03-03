@@ -1,0 +1,11 @@
+#
+limit stacksize 2048k
+date
+a.out <pau
+date
+unlimit stacksize
+cc -cO *.c
+K
+rm lin
+lint -hx *.c >&lin
+date

@@ -1,0 +1,3 @@
+a.out <pacpp
+cc -cO cpp.c
+cc [A-c]*.o

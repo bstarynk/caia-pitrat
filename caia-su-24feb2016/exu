@@ -1,0 +1,2 @@
+./a.out <pau >&pb
+cp a.out caia

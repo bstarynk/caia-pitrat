@@ -1,0 +1,3 @@
+a.out <pag
+cc -cO cpp.c
+a.out <pagg

@@ -1,0 +1,2 @@
+./a.out <pat >&pb
+cp a.out cout

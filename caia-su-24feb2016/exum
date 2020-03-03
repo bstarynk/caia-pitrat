@@ -1,0 +1,5 @@
+#
+limit stacksize 2048k
+a.out <pau 
+unlimit stacksize
+cp a.out cout

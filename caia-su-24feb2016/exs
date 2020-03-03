@@ -1,0 +1,2 @@
+./a.out <pas >&pb
+cp a.out cout

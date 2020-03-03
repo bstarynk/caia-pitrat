@@ -1,0 +1,108 @@
+#include "dx.h"
+void EXECUTE0(void )
+{int V4,Q,NV,V7,V10,V9,I,V6,V5,V17,V19,V18,V12,V16,V15,V26,V28,V27,V25,V29,V30,V11,V22,V21,V35,V37,V36,V34,V33,V41,V40;
+int B,A;
+int R;
+int WZ1,WZ2;
+int jvj;
+jvj=v[0];
+v[0]+=14;
+x[jvj+1]=10138;z[jvj+1]=(-100);
+if(v[90]==1442&&v[97]==0) {
+(*f[4])();v[22]+=3;if(v[101]) goto l17;
+ else goto l16;
+}
+B=pile[v[22]];A=pile[v[22]+1];R=pile[v[22]+2];v[22]+=3;
+WZ2=v[22]+2;WZ1=v[22]+1;
+pile[v[22]]=368;pile[WZ1]=A;pile[WZ2]=jvj+2;
+(*f[37])();if(v[102]) goto l16;     /*FNDO0(368,A,jvj+2)*/
+pile[v[22]]=345;pile[WZ1]=jvj+2;pile[WZ2]=jvj+3;
+(*f[37])();if(v[102]) goto l16;     /*FNDO0(345,jvj+2,jvj+3)*/
+pile[v[22]]=365;pile[WZ1]=jvj+3;pile[WZ2]=jvj+4;
+(*f[36])();     /*FNDE0(365,jvj+3,jvj+4)*/
+l1:if((x[jvj+4]<=0)) goto l16;
+x[jvj+5]=s[x[jvj+4]];z[jvj+5]=(x[jvj+5]<=sepcte) ? x[jvj+5] : z[jvj+4];
+pile[v[22]]=246;pile[WZ1]=jvj+5;
+(*f[45])();if(v[102]) goto l2;     /*FNDC0(246,jvj+5,V4)*/
+V4=pile[WZ2];
+x[jvj+6]=x[jvj+5];z[jvj+6]=z[jvj+5];
+Q=V4;
+NV=100;
+pile[v[22]]=Q;pile[WZ1]=jvj+6;
+(*f[31])();     /*CRETND0(Q,jvj+6)*/
+V26=knd[Q];
+V28=knr[Q];
+V27=V28-1;
+l5:if((V26<=V27)) goto l7;
+pile[v[22]]=103;pile[WZ1]=A;pile[WZ2]=jvj+7;
+(*f[37])();if(v[102]) goto l9;     /*FNDO0(103,A,jvj+7)*/
+pile[v[22]]=140;pile[WZ1]=jvj+7;
+(*f[49])();if(v[102]) goto l9;     /*FNDC1(140,jvj+7,V7)*/
+V7=pile[WZ2];
+V10=knd[Q];
+V9=V10-1;
+I=0;
+l3:if((I>V9)) goto l9;
+V6=vnd[Q][I];
+V5=V6;
+if((V5==V7)) goto l8;
+I++;
+goto l3;
+l2:x[jvj+4]=t[x[jvj+4]];
+goto l1;
+l7:V25=tnd[Q][V26];
+if(V25!=20&&V25!=23) goto l6;
+V29=V26+NV;
+V30=com+V29;
+prov[V29]=V30;
+l6:V26++;
+goto l5;
+l8:V11=I+NV;
+prov[V11]=B;
+l9:x[jvj+9]=vo[16];z[jvj+9]=vz[16];
+pile[v[22]]=128;pile[WZ1]=jvj+9;pile[WZ2]=jvj+10;
+(*f[36])();     /*FNDE0(128,jvj+9,jvj+10)*/
+l10:if((x[jvj+10]>0)) goto l11;
+pile[v[22]]=Q;pile[WZ1]=NV;pile[WZ2]=jvj+12;
+(*f[886])();     /*EVLGG0(Q,NV,jvj+12)*/
+if((x[jvj+12]!=134)) goto l16;
+V35=knd[Q];
+V37=knr[Q];
+V36=V37-1;
+l14:if((V35>V36)) goto l16;
+V34=vnd[Q][V35];
+V33=V34;
+if((V33==(-4780))) goto l15;
+V35++;
+goto l14;
+l11:x[jvj+8]=s[x[jvj+10]];z[jvj+8]=(x[jvj+8]<=sepcte) ? x[jvj+8] : z[jvj+10];
+pile[v[22]]=158;pile[WZ1]=jvj+8;pile[WZ2]=jvj+11;
+(*f[37])();if(v[102]) goto l12;     /*FNDO0(158,jvj+8,jvj+11)*/
+if((x[jvj+11]!=41)) goto l12;
+pile[v[22]]=140;
+(*f[49])();if(v[102]) goto l12;     /*FNDC1(140,jvj+8,V17)*/
+V17=pile[WZ2];
+V19=knd[Q];
+V18=V19-1;
+V12=0;
+l4:if((V12>V18)) goto l12;
+V16=vnd[Q][V12];
+V15=V16;
+if((V15==V17)) goto l13;
+V12++;
+goto l4;
+l13:pile[v[22]]=130;pile[WZ1]=jvj+8;
+(*f[45])();if(v[102]) goto l12;     /*FNDC0(130,jvj+8,V22)*/
+V22=pile[WZ2];
+V21=V12+NV;
+prov[V21]=V22;
+l12:x[jvj+10]=t[x[jvj+10]];
+goto l10;
+l15:V41=V35+NV;
+V40=prov[V41];
+x[jvj+13]=x[V40];z[jvj+13]=z[V40];
+x[jvj+14]=x[jvj+13];z[jvj+14]=0;
+x[R]=x[jvj+14];z[R]=z[jvj+14];
+l17:x[jvj+1]=incon;v[0]=jvj;v[22]-=3;v[102]=0;return;
+l16:x[jvj+1]=incon;v[0]=jvj;v[22]-=3;v[102]=1;return;
+}
