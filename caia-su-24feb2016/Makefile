@@ -21,3 +21,8 @@ objects: $(OBJECTS)
 
 clean:
 	$(RM) *.o
+
+_data_.c: dx.h
+	date +"/*generated $@ on %c*/%n" > $@-tmp
+	printf '#include "%s"\n' $^ >> $@-tmp
+	mv $@-tmp $@
