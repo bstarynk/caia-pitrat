@@ -8,3 +8,21 @@ His book [*Artificial Intelligence: the conscience of a conscious machine*](http
 
 The [RefPerSys](http://refpersys.org/) system is inspired by CAIA.
 
+## Building CAIA
+
+A residual metabug gives a buggy generated `dx.h` (global variables should be  ̀ extern` but are not).
+The hand-written C++ program `improve-generated-dx.cc` (contributed by Basile Starynkevitch) is correcting that generated header.
+
+so `cd caia-su-24feb2016` then run `make -j` to build `./caia` ; there
+are half a million lines of generated C code in 3834 `*.c` file, so
+the initial build takes some time.
+
+## Running CAIA
+
+This was work in progress by the late Jacques Pitrat, and there is no
+documentation. But the set of rulees providing the
+*read-eval-print-loop* is named `EDITE` so you can try `L EDITE` after
+having started `./caia`
+
+
+

@@ -34,7 +34,7 @@ objects: $(OBJECTS)
 	$(COMPILE.c) $< -c -o $@
 
 clean:
-	mv --backup _old_dx_.h dx.h
+	if [ -f _old_dx_.h ] ; then  mv --backup _old_dx_.h dx.h ; fi
 	$(RM) *.o _dx_was_improved_ _data_.c  caia improve-generated-dx
 
 _data_.c: dx.h
