@@ -22,7 +22,8 @@ the initial build takes some time.
 This was work in progress by the late Jacques Pitrat, and there is no
 documentation. But the set of rulees providing the
 *read-eval-print-loop* is named `EDITE` so you can try `L EDITE` after
-having started `./caia`
+having started `./caia` ; many names are very short, and some are
+inspired by French.
 
 
 

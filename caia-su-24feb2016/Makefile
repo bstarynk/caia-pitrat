@@ -9,7 +9,9 @@ RM= rm -vf
 
 CSOURCES:= $(sort $(wildcard *.c))
 OBJECTS:= $(patsubst %.c, %.o, $(CSOURCES))
-all: _dx_was_improved_ caia 
+all: _dx_was_improved_
+	$(MAKE) objects
+	$(MAKE) caia
 	ln -svf caia a.out
 
 improve-generated-dx: ../improve-generated-dx.cc
