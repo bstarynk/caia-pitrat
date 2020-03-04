@@ -34,7 +34,8 @@ objects: $(OBJECTS)
 	$(COMPILE.c) $< -c -o $@
 
 clean:
-	$(RM) *.o _old_dx_.h _dx_was_improved_ _data_.c  caia improve-generated-dx
+	mv --backup _old_dx_.h dx.h
+	$(RM) *.o _dx_was_improved_ _data_.c  caia improve-generated-dx
 
 _data_.c: dx.h
 	date +"/*generated $@ on %c*/%n" > $@-tmp
