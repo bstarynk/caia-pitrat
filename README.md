@@ -26,4 +26,5 @@ having started `./caia` ; many names are very short, and some are
 inspired by French.
 
 
-
+## slides
+See also [these PDF slides](http://refpersys.org/Starynkevitch-CAIA-RefPerSys-2020mar06.pdf) of a talk given at an [AFIA seminar](https://afia.asso.fr/journee-hommage-j-pitrat/) (march 6, 2020) in honor of J.Pitrat.
