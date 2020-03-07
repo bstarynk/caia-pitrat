@@ -10,7 +10,7 @@ The [RefPerSys](http://refpersys.org/) system is inspired by CAIA.
 
 ## Building CAIA
 
-A residual metabug gives a buggy generated `dx.h` (global variables should be  ̀ extern` but are not).
+A residual metabug gives a buggy generated `dx.h` (global variables should be `extern` but are not).
 The hand-written C++ program `improve-generated-dx.cc` (contributed by Basile Starynkevitch) is correcting that generated header.
 
 so `cd caia-su-24feb2016` then run `make -j` to build `./caia` ; there
