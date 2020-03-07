@@ -13,7 +13,7 @@ The [RefPerSys](http://refpersys.org/) system is inspired by CAIA.
 A residual metabug gives a buggy generated `dx.h` (global variables should be `extern` but are not).
 The hand-written C++ program `improve-generated-dx.cc` (contributed by Basile Starynkevitch) is correcting that generated header.
 
-so `cd caia-su-24feb2016` then run `make -j` to build `./caia` ; there
+so `cd caia-su-24feb2016` then run `make -j` perhaps twice to build `./caia` ; there
 are half a million lines of generated C code in 3834 `*.c` file, so
 the initial build takes some time.
 
@@ -21,7 +21,7 @@ the initial build takes some time.
 
 This was work in progress by the late Jacques Pitrat, and there is no
 documentation. But the set of rulees providing the
-*read-eval-print-loop* is named `EDITE` so you can try `L EDITE` after
+*read-eval-print-loop* is named `EDITE` so you can try `L EDITE` (perhaps twice) after
 having started `./caia` ; many names are very short, and some are
 inspired by French.
 
