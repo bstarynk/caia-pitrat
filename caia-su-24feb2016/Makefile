@@ -1,7 +1,8 @@
 # file caia-su-24feb2016/Makefile contributed by Basile Starynkevitch
 .PHONY: all clean objects _dx_was_improved_
 
-CC=gcc
+CCACHE= ccache
+CC=$(CCACHE) gcc
 CXX=g++
 CXXFLAGS= -g -O2 -Wall
 CFLAGS= -g -O2 -std=c99
@@ -37,7 +38,7 @@ objects: $(OBJECTS)
 
 clean:
 	if [ -f _old_dx_.h ] ; then  mv --backup _old_dx_.h dx.h ; fi
-	$(RM) *.o _dx_was_improved_ _data_.c  caia improve-generated-dx
+	$(RM) *.o _dx_was_improved_ _data_.c  caia a.out improve-generated-dx
 
 _data_.c: dx.h
 	date +"/*generated $@ on %c*/%n" > $@-tmp

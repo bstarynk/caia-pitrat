@@ -13,7 +13,7 @@ The code here is published for historical references. **Don't expect bugs to be 
 
 I [Basile Starynkevitch](http://starynkevitch.net/Basile/) made only
 cosmetic improvements and don't understand in 2020 all the details of
-this system.
+this system. I did met the late Jacques Pitrat several times.
 
 See also [this academic
 commemoration](https://afia.asso.fr/journee-hommage-j-pitrat/) in
@@ -23,23 +23,21 @@ honor of the *late* Jacques Pitrat.
 
 You need [ccache](https://ccache.dev/).
 
-A residual metabug gives a buggy generated `dx.h` (global variables
-should be  ̀ extern` but are not).  The hand-written C++ program
-`improve-generated-dx.cc` (contributed by Basile Starynkevitch) is
-correcting that generated header. The correction is brittle.
+A residual metabug gives a buggy generated `dx.h` (global variables should be `extern` but are not).
+The hand-written C++ program `improve-generated-dx.cc` (contributed by Basile Starynkevitch) is correcting that generated header.
 
-so `cd caia-su-24feb2016` then run `make -j` to build `./caia` and if
-that fails, run `make` again; there are half a million lines of
-generated C code in 3834 `*.c` file, so the initial build takes some
-time (several minutes).
+so `cd caia-su-24feb2016` then run `make -j` perhaps twice to build `./caia` ; there
+are half a million lines of generated C code in 3834 `*.c` file, so
+the initial build takes some time.
 
 ## Running CAIA
 
-This was work in progress by the late Jacques Pitrat, and there is no
-documentation. But the set of rules providing the
-*read-eval-print-loop* is named `EDITE` so you can try typing `L EDITE` after
-having started `./caia` ; if that fails, try `L EDITE` again. Many
-names are very short, and some are inspired by French.
+This was **work in progress by the late Jacques Pitrat**, and there is no
+documentation. But the set of rulees providing the
+*read-eval-print-loop* is named `EDITE` so you can try `L EDITE`
+(perhaps twice) after having started `./caia` ; many names are very
+short, and some are inspired by French.
 
 
-
+## slides
+See also [these PDF slides](http://refpersys.org/Starynkevitch-CAIA-RefPerSys-2020mar06.pdf) of a talk given at an [AFIA seminar](https://afia.asso.fr/journee-hommage-j-pitrat/) (march 6, 2020) in honor of J.Pitrat.
