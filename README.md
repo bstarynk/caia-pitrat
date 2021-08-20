@@ -1,6 +1,8 @@
 # caia-pitrat
 
 The CAIA artificial intelligence system of *late* [Jacques Pitrat](https://en.wikipedia.org/wiki/Jacques_Pitrat)
+
+
 [Jacques Pitrat](https://fr.wikipedia.org/wiki/Jacques_Pitrat) was the French pioneer of Artificial Intelligence.
 His blog is (in Q1 2020) still available on http://bootstrappingartificialintelligence.fr/WordPress3/
 
