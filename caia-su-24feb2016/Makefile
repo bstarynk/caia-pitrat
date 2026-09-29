@@ -5,7 +5,9 @@ CCACHE= ccache
 CC=$(CCACHE) gcc
 CXX=g++
 CXXFLAGS= -g -O2 -Wall
-CFLAGS= -g -O2 -std=c99
+
+### this is suggested by Cyril Michel HANSEN in sept 2026:
+CFLAGS= -g -O2 -std=c99 -D_DEFAULT_SOURCE -fcommon -Wno-error=return-mismatch
 RM= rm -vf
 
 CSOURCES:= $(sort $(wildcard *.c))
